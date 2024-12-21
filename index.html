@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "tb-green": "#15b392",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="mx-auto max-w-screen-2xl">
+    <header
+      class="fixed z-10 left-0 right-0 bg-white py-4 text-slate-800 shadow-lg"
+    >
+      <!-- MASUKAN KODE NAVBAR-->
+      <nav class="mx-auto flex w-[94%] items-center justify-between">
+        <div>
+          <p class="text-center text-xl font-bold">🏠︎ HOME</p>
+        </div>
+        <div
+          class="nav-links absolute left-0 top-[-800px] flex min-h-[45vh] w-full items-center bg-white px-5 duration-500 md:static md:min-h-fit md:w-auto"
+        >
+          <ul
+            class="flex flex-col gap-8 md:flex-row md:items-center md:gap-[4vw]"
+          >
+            <li>
+              <a class="hover:text-tb-green duration-300" href="#about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-tb-green duration-300" href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-tb-green duration-300" href="#experience"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-tb-green duration-300" href="#projects"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          onclick="onToggleMenu(this)"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="z-10 size-8 cursor-pointer md:hidden"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+          />
+        </svg>
+      </nav>
+    </header>
+    <main class="grid gap-y-32">
+      <section id="about">
+        <!-- MASUKAN KODE SECTION ABOUT DISINI -->
+        <div
+          class="relative mx-auto grid grid-cols-1 px-8 pt-28 sm:px-10 md:grid-cols-2 lg:items-center lg:px-12"
+        >
+          <div class="">
+            <h1 class="text-3xl font-medium sm:text-5xl">
+              I'm
+              <strong class="text-tb-green block font-extrabold"
+                >Revananda
+              </strong>
+            </h1>
+            <p class="mt-4 max-w-lg text-lg">
+              Hey there! I'm a tech enthusiast studying at Semarang State
+              Polytechnic, diving into the world of backend development. With a
+              toolbox packed with MySQL, Python, PHP, and JavaScript, I'm on a
+              mission to solve tricky problems and create seamless solutions.
+              Let's innovate and build the future together!!
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#"
+                class="hover:text-tb-green block w-full rounded-lg bg-gray-800 px-12 py-3 text-center text-sm font-medium text-white shadow sm:w-auto"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+          <img
+            src="images/Foto.jpg"
+            alt=""
+            class="mx-auto hidden h-[28rem] rounded lg shadow-lg md:block"
+          />
+        </div>
+      </section>
+      <section id="skills" class="grid items-center bg-gray-800 p-6">
+        <!-- MASUKAN KODE SECTION SKILL DISINI -->
+        <div
+          class="grid grid-cols-1 gap-4 px-4 sm:px-6 lg:grid-cols-4 lg:gap-8 lg:px-8"
+        >
+          <div class="h-32 rounded-lg bg-gray-50">
+            <div class="flex size-full items-center justify-center gap-6">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                class="w-[50px] object-cover"
+              />
+              <div>
+                <p class="font-semibold">HTML</p>
+                <p class="text-tb-green">Frontend</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-32 rounded-lg bg-gray-50">
+            <div class="flex size-full items-center justify-center gap-6">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                class="w-[50px] object-cover"
+              />
+              <div>
+                <p class="font-semibold">Tailwindcss</p>
+                <p class="text-tb-green">Frontend</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-32 rounded-lg bg-gray-50">
+            <div class="flex size-full items-center justify-center gap-6">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+                class="w-[50px] object-cover"
+              />
+              <div>
+                <p class="font-semibold">Javascript</p>
+                <p class="text-tb-green">Fullstack</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-32 rounded-lg bg-gray-50">
+            <div class="flex size-full items-center justify-center gap-6">
+              <img
+                src="https://www.mysql.com/common/logos/logo-mysql-170x115.png"
+                class="w-[50px] object-cover"
+              />
+              <div>
+                <p class="font-semibold">MySQL</p>
+                <p class="text-tb-green">Backend</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <!-- MASUKAN KODE SECTION EXPERIENCE DISINI -->
+        <div
+          class="mb-10 grid grid-cols-1 gap-4 px-4 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px8"
+        >
+          <div
+            class="bg-pattern flex h-auto flex-col justify-center rounded-lg p-8"
+          >
+            <h1 class="text-tb-green mb-4 text-4xl font-bold">More About Me</h1>
+            <p class="max-w-sm text-base text-white">
+              Hello! I'm a dedicated student at Politeknik Negeri Semarang,
+              where I am currently pursuing a degree in Informatics Engineering.
+              My journey into the world of programming began in high school,
+              where I embarked on my first project: creating a game using C++.
+              This initial experience ignited my passion for coding and has led
+              me to continuously expand my knowledge in various programming
+              languages. Currently, I am not only honing my skills in different
+              programming languages but also diving into the realms of UI/UX
+              design and logo creation for companies. While I may not yet be on
+              par with seasoned professionals, my commitment to learning and
+              growing in these areas is unwavering. I strive to overcome any
+              setbacks in my career by persistently improving and refining my
+              skills. Beyond the technical aspects, I am also exploring ways to
+              integrate creativity into my work. Whether it's developing
+              user-friendly interfaces or designing compelling logos, I am
+              driven by the desire to blend functionality with aesthetics. I
+              believe that my dedication and willingness to learn will pave the
+              way for a successful career in the tech industry.
+            </p>
+          </div>
+
+          <div
+            class="flex h-auto flex-col justify-center gap-8 rounded-lg bg-gray100 p-8"
+          >
+            <div class="mb-3 flex flex-col items-center md:flex-row md:gap-8">
+              <img src="images/exp1.png" alt="" class="h-36 rounded-lg" />
+              <div>
+                <h3 class="mt-2 text-center text-lg font-bold md:text-left">
+                  Github Contributor
+                </h3>
+                <p>
+                  As a GitHub contributor, I have actively committed code to
+                  various projects, demonstrating my ability to collaborate and
+                  share my work with the development community. Through this
+                  experience, I have gained valuable insights into version
+                  control and the collaborative nature of open-source
+                  development.
+                </p>
+              </div>
+            </div>
+            <div class="mb-3 flex flex-col items-center md:flex-row md:gap-8">
+              <img src="images/exp2.png" alt="" class="h-36 rounded-lg" />
+              <div>
+                <h3 class="mt-2 text-center text-lg font-bold md:text-left">
+                  Freelance
+                </h3>
+                <p>
+                  As a freelancer, I specialize in creating captivating
+                  PowerPoint presentations and efficiently completing tasks
+                  independently. My freelance journey has sharpened my skills in
+                  time management and delivering high-quality work promptly.
+                  Each project is an opportunity to bring fresh and innovative
+                  designs to life, making sure the final product is both
+                  visually appealing and impactful.
+                </p>
+              </div>
+            </div>
+            <div class="mb-3 flex flex-col items-center md:flex-row md:gap-8">
+              <img src="images/exp3.jpg" alt="" class="h-36 rounded-lg" />
+              <div>
+                <h3 class="mt-2 text-center text-lg font-bold md:text-left">
+                  College Student
+                </h3>
+                <p>
+                  As an Informatics Engineering student, I excel at creating
+                  impactful PowerPoint presentations and tackling tasks
+                  efficiently. My projects blend creativity with technical
+                  know-how, supported by a great group of friends who keep me
+                  motivated and inspired. I'm also learning Python and C to
+                  become a backend developer, continually expanding my skill
+                  set.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <!-- MASUKAN KODE SECTION PROJECTS DISINI -->
+        <div class="mb-10 px-8 sm:px-10 lg:px-12">
+          <h1 class="text-tb-green mb-4 text-4xl font-bold">My Projects</h1>
+          <p class="max-w-2xl text-base">
+            As a developer with developing skills, I have embarked on various
+            projects to hone my programming abilities. I primarily use Python
+            for web development and Internet of Things (IoT) projects.
+            Additionally, I am proficient in HTML, CSS (including Tailwind), and
+            JavaScript, which I use to create my portfolio. These projects
+            reflect my enthusiasm for integrating different technologies to
+            develop creative and functional solutions
+          </p>
+          <div
+            class="mt-10 grid grid-cols-1 gap-4 px-4 lg:grid-cols-2 lg:gap-8"
+          >
+            <a href="#" class="block">
+              <img
+                alt=""
+                src="images/prj1.png"
+                class="object-covershadow-xl h-56 w-full rounded-bl-3xl rounded-tr-3xl object-cover shadow-xl sm:h-64 lg:h-72"
+              />
+              <div
+                class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4"
+              >
+                <strong class="font-medium">Portofolio</strong>
+                <span
+                  class="hidden sm:block sm:h-px sm:w-8 sm:bg-blue-500"
+                ></span>
+                <p class="mt-0.5 opacity-50 sm:mt-0">Web Design</p>
+              </div>
+            </a>
+            <a href="#" class="block">
+              <img
+                alt=""
+                src="images/prj2.png"
+                class="object-covershadow-xl h-56 w-full rounded-bl-3xl rounded-tr-3xl object-cover shadow-xl sm:h-64 lg:h-72"
+              />
+              <div
+                class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4"
+              >
+                <strong class="font-medium">Alarm Pop-up</strong>
+                <span
+                  class="hidden sm:block sm:h-px sm:w-8 sm:bg-blue-500"
+                ></span>
+                <p class="mt-0.5 opacity-50 sm:mt-0">Internet of Things</p>
+              </div>
+            </a>
+            <a href="#" class="block">
+              <img
+                alt=""
+                src="images/prj3.png"
+                class="object-covershadow-xl h-56 w-full rounded-bl-3xl rounded-tr-3xl object-cover shadow-xl sm:h-64 lg:h-72"
+              />
+              <div
+                class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4"
+              >
+                <strong class="font-medium">About Me</strong>
+                <span
+                  class="hidden sm:block sm:h-px sm:w-8 sm:bg-blue-500"
+                ></span>
+                <p class="mt-0.5 opacity-50 sm:mt-0">Web Application</p>
+              </div>
+            </a>
+            <a href="#" class="block">
+              <img
+                alt=""
+                src="images/prj4.png"
+                class="object-covershadow-xl h-56 w-full rounded-bl-3xl rounded-tr-3xl object-cover shadow-xl sm:h-64 lg:h-72"
+              />
+              <div
+                class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4"
+              >
+                <strong class="font-medium"
+                  >CPU Scheduling with System Algorithms</strong
+                >
+                <span
+                  class="hidden sm:block sm:h-px sm:w-8 sm:bg-blue-500"
+                ></span>
+                <p class="mt-0.5 opacity-50 sm:mt-0">
+                  Power Point presentations
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-footer">
+      <!-- MASUKAN KODE FOOTER DISINI -->
+      <footer class="bg-footer">
+        <div class="mx-auto max-w-5xl px-4 py-16 text-white sm:px-6 lg:px-8">
+          <p class="text-center text-xl font-bold">Last Page</p>
+          <p class="mx-auto mt-2 max-w-md text-center leading-relaxed">
+            "Thank you for visiting my portfolio. I hope you enjoyed my work and
+            found inspiration in what I share. If you have any questions or
+            would like to collaborate, please feel free to contact me."
+          </p>
+          <ul class="mt-6 flex justify-center gap-6 md:gap-8">
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-white transition hover:text-teal-300/75"
+              >
+                <svg
+                  class="size-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-white transition hover:text-teal-300/75"
+              >
+                <svg
+                  class="size-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-white transition hover:text-teal-300/75"
+              >
+                <svg
+                  class="size-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-white transition hover:text-teal-300/75"
+              >
+                <svg
+                  class="size-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
